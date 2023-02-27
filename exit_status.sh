@@ -131,6 +131,56 @@ echo "The y is: $y"
 . ./myvariable
 
 
+VARIABLE CONCEPT
+variable concept 
+===================
+
+define declare a variable
+
+x=2 #dont provide space on either side of = symbol
+x = 2#invalid
+x= 2#invalid
+x =2#invalid
+x=2#valid
+
+use echo $x or echo "$x" or echo "${x}"
+
+always try to use echo "$x" best practice
+sometimes in expresion we have to use curly braces time will tell us
+
+y=5.6
+m=shell
+n="shell scripting"
+
+suppose you want to assign cmd output to variable
+earlier we see redirection 
+$ls > listfile.txt
+files will store in your harddisk
+varibles will store in ram memory
+
+d=$(date)
+echo "$d"
+
+no need to decalre datatype
+
+default variable value is always empty
+
+
+types of variable
+1 system defined variable
+2 user defined varible
+
+to know the system defined varible you have to run one command env
+$env
+
+example of system defined varible
+
+echo "$UID"
+echo "$USER"
+echo "$HOME"
+
+
+
 
 
 
